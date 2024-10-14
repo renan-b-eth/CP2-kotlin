@@ -7,6 +7,7 @@
     tools:context=".PrimeiroFragment">
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="400dp"
         android:layout_centerInParent="true"
@@ -23,11 +24,68 @@
         android:id="@+id/editTextText"
         android:layout_width="200dp"
         android:layout_height="100dp"
+        android:layout_alignTop="@+id/textView"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
+        android:layout_marginTop="163dp"
+        android:layout_marginEnd="175dp"
         android:layout_marginRight="500dp"
+        android:layout_marginBottom="294dp"
         android:ems="10"
         android:inputType="text"
-        android:text="Name" />
+        android:text="Senha" />
+
+    <EditText
+        android:id="@+id/editTextText2"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_alignTop="@+id/textView"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="69dp"
+        android:layout_marginEnd="173dp"
+        android:layout_marginRight="500dp"
+        android:layout_marginBottom="391dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Email" />
+
+    <EditText
+        android:id="@+id/editTextText3"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_alignTop="@+id/textView"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="339dp"
+        android:layout_marginEnd="175dp"
+        android:layout_marginRight="500dp"
+        android:layout_marginBottom="119dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Fale Conosco" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="-200dp"
+        android:layout_marginEnd="281dp"
+        android:layout_marginBottom="65dp"
+        android:text="ENVIAR" />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="-200dp"
+        android:layout_marginEnd="-18dp"
+        android:layout_marginBottom="245dp"
+        android:entries="@array/spinner1" />
 
 
 </RelativeLayout>
