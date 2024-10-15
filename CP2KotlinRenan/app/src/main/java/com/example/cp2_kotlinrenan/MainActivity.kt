@@ -12,9 +12,6 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
-import androidx.fragment.app.Fragment
 
 class MainActivity : AppCompatActivity() {
     @SuppressLint("MissingInflatedId")
@@ -22,6 +19,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
+
+
 
         val items = listOf("CRIPTCOS", "RENDEY LLC", "PRAETOR LLC")
 
@@ -47,15 +46,29 @@ class MainActivity : AppCompatActivity() {
 
 
                 val edt1 = findViewById<EditText>(R.id.editTextText)
-                val botao = findViewById<Button>(R.id.button)
+                val botao = findViewById<Button>(R.id.botao1)
                 val edt2 = findViewById<TextView>(R.id.textView)
 
                 botao.setOnClickListener {
-                    val
-                            text = edt1.text.toString()
+                    val text = edt1.text.toString()
                     edt2.text = "Você digitou: $text"
                 }
+    // parte da internacionalização
+                val botaoUs = findViewById<Button>(R.id.botaoUs)
+                botaoUs.setOnClickListener {
+                    val edt2 = findViewById<EditText>(R.id.editTextText)
+                    val edt3 = findViewById<EditText>(R.id.editTextText2)
+                    val edt4 = findViewById<EditText>(R.id.editTextText3)
+
+                    edt2.setText("Password")
+                    edt3.setText("Name")
+                    edt4.setText("Contact-US")
+                }
+
             }
+
+
+
 
             override fun onNothingSelected(parent: AdapterView<*>?) {
                 TODO("Not yet implemented")
